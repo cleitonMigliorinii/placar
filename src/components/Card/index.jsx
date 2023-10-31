@@ -9,7 +9,8 @@ function Card(props){
    
    function handleNavigationDetails(){
 
-    navigation.navigate('details')
+    navigation.navigate('details', {id:200, home : props.teamHome, 
+                                    visited: props.teamVisited})
 
    }
 

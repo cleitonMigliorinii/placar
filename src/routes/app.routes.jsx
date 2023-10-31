@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import Home from "../screens/Home";
 import Details from "../screens/Details";
+import Team from "../screens/Team";
 
 function AppRoutes(){
 
@@ -8,10 +9,10 @@ function AppRoutes(){
 
     return(
 
-        <Navigator screenOptions={{headerShown: false}}>
-
-            <Screen name="placar" component={Home}/>
-            <Screen name="details" component={Details}/>
+        <Navigator initialRouteName="placar" screenOptions={{headerShown: false}}>
+              <Screen name="details" component={Details}/>
+              <Screen name="placar" component={Home}/>
+              <Screen name="team" component={Team}/>
         </Navigator>
 
     )
